@@ -11,4 +11,9 @@ export class AppController {
   ): Promise<any> {
     return await this.appService.getProfileByUsername(username);
   }
+
+  @Get()
+  hello(): string {
+    return 'Padrone Insta API';
+  }
 }
