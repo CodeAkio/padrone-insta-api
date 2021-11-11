@@ -44,7 +44,7 @@ export class AppService {
   private getLastPosts(posts: Array<any>): Array<any> {
     console.log(posts);
     if (!posts || posts.length <= 0) {
-      return [];
+      return null;
     }
 
     const qtPosts = posts.length;
