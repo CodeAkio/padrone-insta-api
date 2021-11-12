@@ -9,6 +9,7 @@ import { AppService } from './app.service';
       timeout: 5000,
       maxRedirects: 5,
       baseURL: 'https://www.instagram.com',
+      responseType: 'json',
     }),
   ],
   controllers: [AppController],
