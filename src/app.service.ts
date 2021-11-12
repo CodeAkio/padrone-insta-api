@@ -6,7 +6,7 @@ export class AppService {
   constructor(private httpService: HttpService) {}
 
   async getProfileByUsername(username: string): Promise<any> {
-    const url = `https://www.instagram.com/${username}/?__a=1`;
+    const url = `https://www.instagram.com/${username}/?__a=1&access_token=EABatZA0WXi5QBAAmGvt1E6GxjpxGCjKbY3CBVz5jzyaaVTv4A4baIDj6c1vosCQTRlay9hVT3qAUkGkkPZAv2NTbbDRhLUk5CxeRvdFKzW5A0GVaourJC3NNuWXeFR7XZCE6LVQPq3wf9OGLcOZBgVICgqlpg9trioaSXbd7BH8t4XxTxaypMohrRsGP3IryUUruHjFCw3F8NyAeawaIfk0ADbqwZCDsZD`;
     console.log('URL: ', url);
 
     try {
