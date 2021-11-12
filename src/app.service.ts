@@ -12,8 +12,8 @@ export class AppService {
     try {
       const response = await this.httpService.get(url).toPromise();
 
-      console.log('Response: ', response.data.graphql.user);
-      return response.data.graphql.user;
+      console.log('Response: ', response.data);
+      return response.data;
 
       // const profileData = {
       //   id: response.data.graphql.user.id,
