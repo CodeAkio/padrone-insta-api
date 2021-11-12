@@ -7,9 +7,11 @@ export class AppService {
 
   async getProfileByUsername(username: string): Promise<any> {
     const url = `/${username}/?__a=1`;
+    console.log('URL: ', url);
 
     try {
       const response = await this.httpService.get(url).toPromise();
+      console.log('Response: ', response);
 
       const profileData = {
         id: response.data.graphql.user.id,
@@ -37,6 +39,7 @@ export class AppService {
 
       return profileData;
     } catch (error) {
+      console.log('Error: ', error);
       throw new NotFoundException();
     }
   }

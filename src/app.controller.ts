@@ -9,6 +9,7 @@ export class AppController {
   async getProfileByUsername(
     @Param('username') username: string,
   ): Promise<any> {
+    console.log('Username: ', username);
     return await this.appService.getProfileByUsername(username);
   }
 
